@@ -206,6 +206,12 @@ public class NativeShare
 #endif
 	}
 
+	public void Clear() { 
+		files.Clear();
+		mimes.Clear();
+		emailRecipients.Clear();
+	}
+
 	#region Utility Functions
 	public static bool TargetExists( string androidPackageName, string androidClassName = null )
 	{

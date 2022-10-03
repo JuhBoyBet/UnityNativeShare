@@ -209,7 +209,9 @@ public class NativeShare
 	public void Clear() { 
 		files.Clear();
 		mimes.Clear();
+#if UNITY_EDITOR || UNITY_ANDROID
 		emailRecipients.Clear();
+#endif
 	}
 
 	#region Utility Functions
